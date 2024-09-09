@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          class vehicle
+      {
+        constructor(model,company)
+        {
+            this.model = model;
+            this.company = company;
+        }
+        getInfo()
+        {
+            console.log('Make : $ {this.model} company : ${this.company}')
+        }
+      }
+
+      class car extends vehicle
+      {
+        constructor(model,company,year)
+        {
+            super(model,company,year);
+            this.year = year;
+        }
+      
+      getInfo()
+      {
+        console.log('Make : ${this.model} company :${this.company} year :${this.year}')
+    }
+      }
+
+      let obj = new car('verna', 'hyundai','2012')
+      obj.getInfo();
+    </script>
+</body>
+</html>

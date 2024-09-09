@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         class Shape {
+            constructor(color) {
+                this.color = color;
+            }
+            getcolor()
+            {
+                return this.color
+            }
+        }
+
+        class Circle extends Shape
+         {
+            constructor(color, radius) 
+            {
+                super(color);
+                this.radius = radius;
+            }
+            getradius()
+            {
+                return this.radius
+            }
+        }
+
+
+        class ColoredDisk extends Circle
+         {
+            constructor(color, radius) 
+            {
+                super(color, radius);
+            }
+        }
+
+      let obj = new coloredcircle('blue',5);
+      console.log(obj.getcolor(), obj.getradius);
+
+
+
+
+    </script>
+</body>
+</html>
